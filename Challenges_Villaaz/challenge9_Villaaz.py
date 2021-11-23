@@ -1,0 +1,26 @@
+print('Welcome to the Basketball Roster Program')
+#creo una lista vacia para meter los datos
+roster = []
+pointGuard = input('Who is your point guard: ').title().strip() 
+shootingGuard = input('Who is your shooting guard: ').title().strip()
+smallForward = input('Who is your point small forward: ').title().strip()
+powerForward = input('Who is your power forward: ').title().strip()
+center = input('Who is your center: ').title().strip()
+roster.append(pointGuard)
+roster.append(shootingGuard)
+roster.append(smallForward)
+roster.append(powerForward)
+roster.append(center)
+print('\n\tYour starting 5 for the upcoming basketball season.')
+#este print muestra los datos de la lista de forma ordenada
+print(f'\t\tPoint Guard:         {roster[0]}\n\t\tShooting Guard:      {roster[1]}\n\t\tSmall Forward:       {roster[2]}\n\t\tPower Forward:       {roster[3]}\n\t\tCenter:              {roster[4]}')
+print(f'\nOh no, {smallForward} is injured.')
+#elimino el valor 2
+roster.pop(2)
+print('Your roster only has', len(roster), 'players.')
+added_player = input(f'Who will take {smallForward} spot: ').title().strip()
+roster.insert(2,added_player)
+print('\n\tYour starting 5 for the upcoming basketball season')
+print(f'\t\tPoint Guard:         {roster[0]}\n\t\tShooting Guard:      {roster[1]}\n\t\tSmall Forward:       {roster[2]}\n\t\tPower Forward:       {roster[3]}\n\t\tCenter:              {roster[4]}')
+print(f'\nGood luck {added_player} you will do great!')
+print(f'Your roster now has {len(roster)} players.')

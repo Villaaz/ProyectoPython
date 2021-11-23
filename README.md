@@ -1,2 +1,2 @@
 # ProyectoPython
-xdxdxd
+Config inicial del Git y Github
